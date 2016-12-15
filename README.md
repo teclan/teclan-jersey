@@ -76,7 +76,7 @@ ResourceConfig resourceConfig = new ResourceConfig(classes);
 #### @DefaultValue
  
 #### GET,POST,PUT,DELETE,OPTION ...
- 	用于方法注解，表示某个方法匹配哪种请求
+用于方法注解，表示某个方法匹配哪种请求
  
  
  
