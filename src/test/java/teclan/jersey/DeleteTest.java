@@ -11,14 +11,14 @@ import us.monoid.web.Resty;
 public class DeleteTest {
     private final Logger        LOGGER     = LoggerFactory
             .getLogger(DeleteTest.class);
-    private static final String DELETE_URL = "http://localhost:%d/delete/%s";
+    private static final String DELETE_URL = "http://localhost:%d/content/delete/%s";
 
     @Test
     public void deleteTest() {
         Resty resty = new Resty();
         try {
-            LOGGER.info("{}", resty
-                    .text(String.format(DELETE_URL, Main.PORT, 700), delete()));
+            LOGGER.info("{}",
+                    resty.text(String.format(DELETE_URL, 8080, 1), delete()));
         } catch (Exception e) {
         }
 
